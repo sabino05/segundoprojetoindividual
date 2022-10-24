@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificar e Descodificar</title>
+    <link rel="stylesheet" href="projetoindividual.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto+Condensed">
+</head>
+<body>
+    <div class="vermelho">
+
+    <form class="conteiner">
+        <h1 class="titulo">codifique e descofifique uma mensagem oculta </h1>
+        <section class="escolha">
+            <select name="selecione" id="selecione">
+                <option value="metodo" disabled selected>Escolha</option>
+                <option value="cesar">Cifra de Cesar</option>
+                <option value="base64">base64</option>
+            </select>
+
+
+            <input class="ocultarIncremento" id="ocultarIncremento" type="number" placeholder="digite um numero">
+
+            <div class="metodo">
+                <input checked type="radio" id="codificar" name="escolhaDemetodo" value="codificar">
+                <label for="escolhaDemetodo" class="Codificar">Codificar</label>
+            </div>
+            <div class="metodo">
+                <input type="radio" id="decodificar" name="escolhaDemetodo">
+                <label for="escolhaDemetodo" class="Codificar">Decodificar</label>
+            </div>
+            </section>
+
+            <section class="mensagem-usuario">
+                <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Digite aqui" rows="10" cols="33"></textarea>
+                <textarea class="texto" id="resultado" name="texto-usuario"  placeholder="Sua mensagem aparecera aqui" rows="10" cols="33" readonly></textarea>
+            </section>
+
+            <button type="button" id="botao">codificar</button>
+
+    </form>
+    <script src="projetoindividual.js"></script>
+</div>
+
+    <footer>
+
+        
+
+
+
+
+    </footer>
+
+
+
+
+    <script src="projetoindividual.js"></script>
+    
+</body>
+</html>
